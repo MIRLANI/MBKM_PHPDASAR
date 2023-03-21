@@ -14,9 +14,15 @@
             width: 50%;
             margin: auto;
         }
-        tr{
-            margin: 20px;
+        table{
+            margin-top: 20px;
             padding: 20px;
+        }
+        td{
+            padding: 10px;
+        }
+        p{
+            text-align: center;
         }
     </style>
 </head>

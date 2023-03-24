@@ -147,8 +147,6 @@ if (isset($_POST['hitung_gaji'])) {
 
             <p>Gaji Pokok: <span class="font-bold"><?= number_format($gapok, 0, ',', '.'); ?></span> </p>
             <p>Tunjangan Keluarga: <span class="font-bold"><?= number_format($tunjangan_keluarga, 0, ',', '.'); ?></span> </p>
-            <p>Gaji Kotor: <span class="font-bold"><?= number_format($gaji_kotor, 0, ',', '.'); ?></span> </p>
-
             <p>Agama: <span class="font-bold"><?= $agama; ?></span> </p>
             <p>Gaji Kotor: <span class="font-bold"><?= number_format($gaji_kotor, 0, ',', '.'); ?></span> </p>
             <p>Zakat Profesi: <span class="font-bold"> <?= number_format($zakat_profesi, 0, ',', '.'); ?></span></p>

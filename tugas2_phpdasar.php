@@ -40,8 +40,8 @@ if (isset($_POST['hitung_gaji'])) {
         $tunjangan_keluarga = "0";
     }
 
-    // menghitung gaji pokok
-    $gaji_kotor = $tunjangan + $tunjangan_keluarga;
+    // menghitung gaji kotor
+    $gaji_kotor = $gapok + $tunjangan + $tunjangan_keluarga;
 
     // menentukan zakat profesi menggunakan ternay operator
     $zakat_profesi = ($agama == 'muslim' && $gaji_kotor >= 6000000) ? $gaji_kotor * 0.025 : 0;

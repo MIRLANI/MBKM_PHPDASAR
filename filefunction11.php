@@ -3,7 +3,7 @@
 
 // condho fungsi void (fungsi yang tidak mengembalaikan nilai)
 
-function sayHello () 
+function sayHello()
 {
     echo "Selamat Pagi" . PHP_EOL;
 }
@@ -11,8 +11,9 @@ sayHello();
 
 echo "<br>";
 
-function hi(string $nama, int $umur) {
-     echo "hay Perkenalkan nama saya  $nama  dan umur saya $umur" . PHP_EOL;
+function hi(string $nama, int $umur)
+{
+    echo "hay Perkenalkan nama saya  $nama  dan umur saya $umur" . PHP_EOL;
 }
 hi("Mirlani", 21);
 echo "<br>";
@@ -22,7 +23,8 @@ hi("Mirlani", 21);
 echo "<br>";
 
 // function yang mengembalikan nilai
-function hu (int $a, int $b) {
+function hu(int $a, int $b)
+{
     $c = $a + $b;
     return $c;
 }
@@ -30,23 +32,24 @@ function hu (int $a, int $b) {
 $y = 10;
 $x = 20;
 
-echo "Hasil 50 + 30 =" . hu (50,30) . PHP_EOL;
+echo "Hasil 50 + 30 =" . hu(50, 30) . PHP_EOL;
 echo "<br>";
-echo "Hasil 70 + 10 =" . hu (70,10) . PHP_EOL;
+echo "Hasil 70 + 10 =" . hu(70, 10) . PHP_EOL;
 echo "<br>";
-echo "hasil dari $y + $x =" . hu($y, $x ) . PHP_EOL;
+echo "hasil dari $y + $x =" . hu($y, $x) . PHP_EOL;
 echo "<br>";
 
 
 
 // rumus mengecek bilangan prima
 
-function prima(int $bilangan) {
+function prima(int $bilangan)
+{
     $prima = true;
-    for ($i=2; $i<$bilangan; $i++){
-        if ($bilangan % $i == 0){
+    for ($i = 2; $i < $bilangan; $i++) {
+        if ($bilangan % $i == 0) {
             $prima = false;
-        }else{
+        } else {
             break;
         }
     }
@@ -54,7 +57,7 @@ function prima(int $bilangan) {
 }
 
 if (prima(3)) {
-     echo "<br>Bilangan prima";
-}else{
+    echo "<br>Bilangan prima";
+} else {
     echo "<br> Bilangan bukan prima";
 }

@@ -67,9 +67,11 @@ class Pegawai{
 $objPegawai1 = new Pegawai('1111', 'Mirlani', 'Manager', 'Islam', 'Menikah');
 $objPegawai2 = new Pegawai('2222', 'Siti','Kepala Bagian', 'Kristen', 'Belum Menikah');
 $objPegawai3 = new Pegawai('3333', 'Ahmad', 'Asisten Manager', 'Islam', 'Menikah');
+$objPegawai4 = new Pegawai('4444', 'Lani', 'Asisten Manager', 'Islam', 'Menikah');
+$objPegawai5 = new Pegawai('5555', 'Arman', 'Asisten Manager', 'Islam', 'Menikah');
 
 
-$pegawai = [$objPegawai1, $objPegawai2, $objPegawai3];
+$pegawai = [$objPegawai1, $objPegawai2, $objPegawai3, $objPegawai4, $objPegawai5];
 
 foreach ($pegawai as $pe) {
     $pe->cetak();

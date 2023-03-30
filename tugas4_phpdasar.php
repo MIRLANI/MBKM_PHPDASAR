@@ -29,11 +29,11 @@ if (isset($_POST['submit'])) {
 
     // memberikan nilai
     $html = 20;
-    $css = 20;
-    $javascrip = 30;
-    $python = 30;
-    $rwd = 20;
-    $mysl = 20;
+    $css = 30;
+    $javascrip = 10;
+    $python = 20;
+    $rwd = 10;
+    $mysl = 30;
 
     // menentukan skor skilnya
     $hasil = $html + $css + $javascrip + $python + $rwd + $mysl;
@@ -41,10 +41,9 @@ if (isset($_POST['submit'])) {
     
 
     function KatagoriSkil()
-    {
-        global $hasil;
-      
+    {   
         // memanggil fungsi diluar function
+        global $hasil;
        
         if ($hasil > 100 || $hasil < 150) {
              $keterang = "Sangat Baik";
